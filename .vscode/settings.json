@@ -1,0 +1,5 @@
+{
+  "git.ignoreLimitWarning": true,
+  "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll"],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

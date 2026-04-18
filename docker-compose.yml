@@ -1,0 +1,19 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: job-search
+    restart: unless-stopped
+    ports:
+      - '5050:5050'
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+    healthcheck:
+      test: ['CMD', 'curl', '-fsS', 'http://localhost:5050/health']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s

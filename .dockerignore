@@ -1,0 +1,10 @@
+dist
+node_modules
+.git
+.github
+.vscode
+coverage
+tmp
+logs
+temp
+.env
